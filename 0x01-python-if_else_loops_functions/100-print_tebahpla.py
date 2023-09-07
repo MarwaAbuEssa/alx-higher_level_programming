@@ -5,4 +5,4 @@ for c in range(ord('z'), ord('a') - 1, -1):
     if n == 0:
         n = 32
     else:
-        n =  0
+        n = 0
