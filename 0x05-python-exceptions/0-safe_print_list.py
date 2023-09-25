@@ -6,7 +6,6 @@ def safe_print_list(my_list=[], x=0):
             print("{}".format(my_list[i]), end="")
             real_number +=1
         except IndexError:
-            print("index exception")
             break
 
     print("")
