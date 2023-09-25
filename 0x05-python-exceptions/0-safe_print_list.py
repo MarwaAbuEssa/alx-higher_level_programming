@@ -5,7 +5,6 @@ for i in range(x):
         print("{}".format(my_list[i]), end="")
         real_number +=1
     except IndexError:
-        print("Index exception")
         break
     print("")
     return (real_number)
