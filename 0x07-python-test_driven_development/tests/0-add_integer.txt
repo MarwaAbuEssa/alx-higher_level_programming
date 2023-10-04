@@ -24,7 +24,7 @@ The function also works with floating-point values.
     >>> add_integer(2.0, 3.0)
     5
 
-Note that floats are casted to ints before addition is performed.
+floats to ints before addition is performed.
 
 ::
 
@@ -80,7 +80,7 @@ If either argument is a non-integer and non-float, a TypeError is raised:
     Traceback (most recent call last):
     TypeError: b must be an integer
 
-If both arguments are non-integers and non-floats, a TypeError message is only
+both arguments are non-integers and non-floats, a TypeError message is only
 printed for the first argument.
 
 ::
