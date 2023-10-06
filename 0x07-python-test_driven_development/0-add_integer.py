@@ -3,7 +3,7 @@
 
 
 def add_integer(a, b=98):
-    """ a+b 
+    """ a+b
     Float arguments are typecasted
 
     Raises:
