@@ -1,4 +1,9 @@
-integer addition function ``add_integer(a, b=98)``.
+===========================
+Use 0-add_integer.py
+===========================
+
+defines an integer addition function ``add_integer(a, b=98)``
+
 
 Usage
 =====
