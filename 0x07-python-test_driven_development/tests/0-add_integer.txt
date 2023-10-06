@@ -2,7 +2,7 @@
 How to Use 0-add_integer.py
 ===========================
 
-This module defines an integer addition function ``add_integer(a, b=98)``.
+an integer addition function ``add_integer(a, b=98)``.
 
 Usage
 =====
@@ -21,7 +21,7 @@ that value is equivalent to using the ``+`` operator.
     >>> add_integer(2, -3)
     -1
 
-The function also works with floating-point values.
+fun  works with floating-point values.
 
 ::
 
@@ -93,7 +93,7 @@ printed for the first argument.
     Traceback (most recent call last):
     TypeError: a must be an integer
 
-The function will fail if infinity is provided.
+function will fail if infinity is provided.
 
 ::
 
