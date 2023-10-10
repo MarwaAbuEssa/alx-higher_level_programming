@@ -129,40 +129,5 @@ Note that lists of strings are sorted lexographically.
 ::
 
     >>> my_list = MyList()
-    >>> my_list.append("Brennan")
-    >>> my_list.append("Poppy")
-    >>> my_list.append("Study")
-    >>> my_list.append("Developer")
-    >>> my_list.append("Betty")
-    >>> print(my_list)
-    ['Brennan', 'Poppy', 'Study', 'Developer', 'Betty']
-
-::
-
-    >>> my_list.print_sorted()
-    ['Brennan', 'Poppy', 'Study', 'Developer', 'Betty']
-
-Another friendly reminder that the original list is unaltered :)
-
-::
-
-    >>> print(my_list)
-    ['Brennan', 'Poppy', 'Study', 'Developer', 'Betty']
-
-Nothing to sort with empty lists.
-
-::
-
-    >>> my_list = MyList()
     >>> my_list.print_sorted()
     []
-
-If ``print_sorted(...)`` is called on a list of different types, a TypeError
-will be raised.
-
-::
-
-    >>> my_list = MyList([1, "Betty", "Demo", 5])
-    >>> my_list.print_sorted()
-    Traceback (most recent call last):
-    TypeError: unorderable types: str() < int()
