@@ -13,9 +13,5 @@ def __init__(self, size):
         size (int): the size of new square
     """
     self.integer_validator("size", size)
-    super().__init__(size, size)
     self.__size = size
-
-def area(self):
-    """ return area of square """
-    return self.__size * self.__size
+    super().__init__(self.__size, self.__size)
