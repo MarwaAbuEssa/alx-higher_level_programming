@@ -99,8 +99,3 @@ class TestRectangle_instantiation(unittest.TestCase):
         r = Rectangle(5, 7, 7, 5, 1)
         r.y = 10
         self.assertEqual(10, r.y)
-
-
-
-
-
