@@ -71,7 +71,7 @@ class TestBase_to_json_string(unittest.TestCase):
 
 
 class TestBase_save_to_file(unittest.TestCase):
-    """ Unittests save_to_file method of Base class."""
+    """ Unittests save_to_file  of Base class."""
     @classmethod
     def cleanFiles(self):
         """ clear already exisitng files before each new test"""
