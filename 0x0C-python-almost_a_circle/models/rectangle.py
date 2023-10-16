@@ -39,50 +39,50 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__width = value
 
-        @property
-        def height(self):
-            """ get the height of the Rectangle."""
-            return self.__height
+    @property
+    def height(self):
+        """ get the height of the Rectangle."""
+        return self.__height
 
-        @height.setter
-        def height(self, value):
-            """ Set get the height of the Rectangle."""
-            if type(value) != int:
-                raise TypeError("height must be an integer")
-            if value <= 0:
-                raise ValueError("height must be > 0")
-            self.__height = value
+    @height.setter
+    def height(self, value):
+        """ Set get the height of the Rectangle."""
+        if type(value) != int:
+            raise TypeError("height must be an integer")
+        if value <= 0:
+            raise ValueError("height must be > 0")
+        self.__height = value
 
-        @property
-        def x(self):
-            """ get the x coordinate of the Rectangle."""
-            return self.__x
+    @property
+    def x(self):
+        """ get the x coordinate of the Rectangle."""
+        return self.__x
 
-        @x.setter
-        def x(self, value):
-            """ Set get the x coordinate of the Rectangle."""
-            if type(value) != int:
-                raise TypeError("x must be an integer")
-            if value < 0:
-                raise ValueError("x must be >= 0")
-            self.__x = value
+    @x.setter
+    def x(self, value):
+        """ Set get the x coordinate of the Rectangle."""
+        if type(value) != int:
+            raise TypeError("x must be an integer")
+        if value < 0:
+            raise ValueError("x must be >= 0")
+        self.__x = value
 
-        @property
-        def y(self):
-            """ get the y coordinate of the Rectangle."""
-            return self.__y
+    @property
+    def y(self):
+        """ get the y coordinate of the Rectangle."""
+        return self.__y
 
-        @y.setter
-        def y(self, value):
-            if type(value) != int:
-                raise TypeError("y must be an integer")
-            if value < 0:
-                raise ValueError("y must be >= 0")
-            self.__y = value
+    @y.setter
+    def y(self, value):
+        if type(value) != int:
+            raise TypeError("y must be an integer")
+        if value < 0:
+            raise ValueError("y must be >= 0")
+        self.__y = value
 
-        def area(self):
-            """ the area of the Rectangle."""
-            return self.width * self.height
+    def area(self):
+        """ the area of the Rectangle."""
+        return self.width * self.height
 
         def display(self):
             """ the Rectangle using the `#` character."""
