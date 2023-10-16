@@ -3,7 +3,7 @@
 Unittest classes:
     TestBase_instantiation
     TestBase_to_json_string
-    TestBase_save_to_file 
+    TestBase_save_to_file
     TestBase_from_json_string
     TestBase_create
     TestBase_load_from_file
@@ -15,6 +15,7 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 import os
+
 
 class TestBase_instantiation(unittest.TestCase):
     """ test init of the Base class."""
@@ -51,6 +52,7 @@ class TestBase_instantiation(unittest.TestCase):
         with self.assertRaises(AttributeError):
             print(Base(20).__nb_instances)
 
+
 class TestBase_to_json_string(unittest.TestCase):
     """ UnitTest for to_json_string  in base class"""
     def test_to_json_string_rectangle_type(self):
@@ -67,16 +69,9 @@ class TestBase_to_json_string(unittest.TestCase):
     def test_to_json_string_none(self):
         self.assertEqual("[]", Base.to_json_string(None))
 
-    def test_to_json_string_rectangle_dict(self):
-        r = Rectangle(14, 11, 6, 12, 10)
-        self.assertTrue(print(Base.to_json_string([r.to_dictionary()])) == 
-                        "{'id': 14, 'width': 11, 'height': 6, 'x': 12, 'y': 10}")
 
-
-
-    class TestBase_save_to_file(unittest.TestCase):
-        """ Unittests save_to_file method of Base class."""
-
+class TestBase_save_to_file(unittest.TestCase):
+    """ Unittests save_to_file method of Base class."""
         @classmethod
         def cleanFiles(self):
             """ clear already exisitng files before each new test"""
@@ -118,6 +113,7 @@ class TestBase_to_json_string(unittest.TestCase):
             with open("Square.json", "r") as f:
                 self.assertTrue(len(f.read()) == 40)
 
+
 class TestBase_from_json_string(unittest.TestCase):
     """ Unittests  from_json_string method of Base class """
     def test_from_json_string_type(self):
@@ -130,10 +126,10 @@ class TestBase_from_json_string(unittest.TestCase):
         self.assertEqual([], Base.from_json_string(None))
 
     def test_from_json_string_no_args(self):
-         with self.assertRaises(TypeError):
-                    Base.from_json_string()
+        with self.assertRaises(TypeError):
+            Base.from_json_string()
 
-     def test_from_json_string_empty_list(self):
+    def test_from_json_string_empty_list(self):
         self.assertEqual([], Base.from_json_string("[]"))
 
     def test_from_json_string_two_squares(self):
@@ -142,6 +138,7 @@ class TestBase_from_json_string(unittest.TestCase):
         in_list = Square.to_json_string(mylist)
         out_list = Square.from_json_string(in_list)
         self.assertEqual(in_list, out_list)
+
 
 class TestBase_create(unittest.TestCase):
     """Unittests create of Base class."""
@@ -192,6 +189,7 @@ class TestBase_create(unittest.TestCase):
         s1_dictionary = s1.to_dictionary()
         s2 = Square.create(**s1_dictionary)
         self.assertNotEqual(s1, s2)
+
 
 class TestBase_load_from_file(unittest.TestCase):
     """Unittests load_from_file of Base class."""
@@ -257,6 +255,7 @@ class TestBase_load_from_file(unittest.TestCase):
         def test_load_from_file_more_than_one_arg(self):
             with self.assertRaises(TypeError):
                 Base.load_from_file([], 1)
+
 
 class TestBase_save_to_file_csv(unittest.TestCase):
     """Unittests testing save_to_file_csv of Base class."""
@@ -335,6 +334,7 @@ class TestBase_save_to_file_csv(unittest.TestCase):
             with self.assertRaises(TypeError):
                 Square.save_to_file_csv([], 1)
 
+
 class TestBase_load_from_file_csv(unittest.TestCase):
     """Unittests load_from_file_csv  of Base class."""
 
@@ -400,17 +400,6 @@ class TestBase_load_from_file_csv(unittest.TestCase):
         with self.assertRaises(TypeError):
             Base.load_from_file_csv([], 1)
 
+
 if __name__ == "__main__":
     unittest.main()
-
-
-
-
-
-
-
-        
-
-
-
-
