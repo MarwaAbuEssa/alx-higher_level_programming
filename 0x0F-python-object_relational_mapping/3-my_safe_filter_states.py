@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-# Displays all states at hbtn_0e_0_usa
-# name = argument.
-# Safe from SQL injections.
-# Usage: ./3-my_safe_filter_states.py <mysql username> \
-#                                     <mysql password> \
-#                                     <database name> \
-#                                     <state name searched>
+""" Displays all states at hbtn_0e_0_usa
+name = argument.
+Usage: ./3-my_safe_filter_states.py <mysql username> \
+                                     <mysql password> \
+                                     <database name> \
+"""                                     <state name searched>
 import sys
 import MySQLdb
 
