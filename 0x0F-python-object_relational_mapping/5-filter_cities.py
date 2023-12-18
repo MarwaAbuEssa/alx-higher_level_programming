@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-# cities by state
-# states table of the database hbtn_0e_4_usa.
-# Usage: ./5-filter_cities.py <mysql username> \
-#                             <mysql password> \
-#                             <database name> \
-#                             <state name searched>
+""" cities by state
+states table of the database hbtn_0e_4_usa.
+Usage: ./5-filter_cities.py <mysql username>\
+                            <mysql password>\
+                            <database name>\
+                            <state name searched>
+"""
 import sys
 import MySQLdb
 
