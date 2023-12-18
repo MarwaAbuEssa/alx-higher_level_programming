@@ -4,7 +4,7 @@ name = argument.
 Usage: ./3-my_safe_filter_states.py <mysql username> \
                                     <mysql password> \
                                     <database name> \
-                                    <state name searched>\
+                                    <state name searched>
 """
 import sys
 import MySQLdb
