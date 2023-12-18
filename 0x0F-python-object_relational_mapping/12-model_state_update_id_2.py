@@ -1,12 +1,14 @@
 #!/usr/bin/python3
-# update nameby state  with id = 2 to
-# Usage: ./12-model_state_update_id_2.py <mysql username> /
-#                                        <mysql password> /
-#                                        <database name>
+""" update nameby state  with id = 2 to
+Usage: ./12-model_state_update_id_2.py <mysql username> \
+                                       <mysql password> \
+                                       <database name>
+"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import State
+
 
 if __name__ == "__main__":
     engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
