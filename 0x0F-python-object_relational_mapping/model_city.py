@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-# a City model.
+""" a City model. """
 
 from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
-
 
 class City(Base):
     """ a city for a MySQL.
