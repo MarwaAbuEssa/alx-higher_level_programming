@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-# insert  State object "Louisiana"
-# Usage: ./11-model_state_insert.py <mysql username> /
-#                                   <mysql password> /
-#                                   <database name>
+""" insert  State object "Louisiana"
+Usage: ./11-model_state_insert.py <mysql username> \
+                                   <mysql password> \
+                                   <database name>
+"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
