@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-    """ all States and Cities in  hbtn_0e_101_usa.
+""" all States and Cities in  hbtn_0e_101_usa.
     Usage: ./101-relationship_states_cities_list.py <mysql username>
                                                     <mysql password>
                                                     <database name>
-    """
+"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
