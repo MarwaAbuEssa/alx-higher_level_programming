@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ get states from hbtn_0e_0_usa
- Usage: ./2-my_filter_states.py <mysql username> \
+Usage: ./2-my_filter_states.py <mysql username> \
                                 <mysql password> \
                                 <database name> \
                                 <state name searched>
