@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ update nameby state  with id = 2 to
-Usage: ./12-model_state_update_id_2.py <mysql username> \
-                                       <mysql password> \
+Usage: ./12-model_state_update_id_2.py <mysql username>
+                                       <mysql password>
                                        <database name>
 """
 import sys
