@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ insert  State object "Louisiana"
-Usage: ./11-model_state_insert.py <mysql username> \
-                                  <mysql password> \
+Usage: ./11-model_state_insert.py <mysql username>
+                                  <mysql password>
                                   <database name>
 """
 import sys
