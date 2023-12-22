@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ State contain  a
-Usage: ./9-model_state_filter_a.py  <mysql username> \
-                                    <mysql password> \
+Usage: ./9-model_state_filter_a.py  <mysql username>
+                                    <mysql password>
                                     <database name>
 """
 import sys
