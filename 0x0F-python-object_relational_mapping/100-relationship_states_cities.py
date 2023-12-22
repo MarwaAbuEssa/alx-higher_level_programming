@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ State “California” City “San Francisco”
-Usage: ./100-relationship_states_cities.py <mysql username> \
-                                            <mysql password> \
-                                            <database name>
+Usage: ./100-relationship_states_cities.py <mysql username>
+                                           <mysql password>
+                                           <database name>
 
 """
 import sys
