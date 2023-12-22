@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """  State by name passed
-Usage: ./10-model_state_my_get.py   <mysql username> \
-                                    <mysql password> \
-                                    <database name> \
+Usage: ./10-model_state_my_get.py   <mysql username>
+                                    <mysql password>
+                                    <database name>
                                     <state name searched>
 """
 import sys
