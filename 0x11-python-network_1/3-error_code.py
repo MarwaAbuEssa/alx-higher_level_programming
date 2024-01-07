@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Sends a request 
+"""Sends a request
 
 Usage: ./3-error_code.py <URL>
 - Handles HTTP errors.
